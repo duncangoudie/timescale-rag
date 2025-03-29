@@ -1,6 +1,6 @@
 """
 Author: Duncan Goudie
-License: AGPL-3.0 License
+License: GNU General Public License v3.0
 Please contact me directly if you wish to use this software with a different license.
 """
 
