@@ -1,0 +1,37 @@
+FROM pytorch/pytorch:2.4.0-cuda11.8-cudnn9-devel
+
+# Arguments
+ARG user
+ARG uid
+ARG home
+ARG workspace
+ARG shell
+
+#remove interactions with installations
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Basic Utilities
+RUN apt-get -y update
+RUN apt-get install -y zsh screen tree sudo ssh vim vim-gtk synaptic dialog apt-utils
+RUN apt-get install -y doxygen nano
+
+# set locale
+RUN apt-get install -y locales locales-all
+ENV LC_ALL en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
+
+# Install postgres
+RUN apt install -y libpq-dev python3-dev
+
+RUN apt install -y python3-pip
+
+
+# install python packages
+WORKDIR /opt/
+COPY requirements_timescale.txt /opt/requirements.txt
+RUN pip3 install -r requirements.txt
+RUN sudo apt-get install -y python3-tk
+
+# Install libreoffice
+RUN sudo apt update && sudo apt install -y libreoffice

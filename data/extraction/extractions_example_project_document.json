@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "original_filepath": "/Projects/GitHub/duncangoudie/timescale-rag/data/raw/example_project_document.pdf",
+    "filename": "example_project_document"
+  },
+  "extractions": {
+    "document_name": "Technology Innovation at [Startup Name]: Current and Upcoming Projects",
+    "document_chunks2": [
+      {
+        "metadata": {
+          "producer": "LibreOffice 7.3",
+          "creator": "Writer",
+          "creationdate": "2025-03-29T15:25:19+00:00",
+          "source": "/Projects/GitHub/duncangoudie/timescale-rag/data/raw/example_project_document.pdf",
+          "total_pages": 4,
+          "page": 0,
+          "page_label": "1"
+        },
+        "page_content": "Technology Innovation at [Startup Name]: Current and Upcoming Projects\nIntroduction\n[Startup Name] is a fast-growing technology company focused on leveraging cutting-edge \nadvancements in artificial intelligence, cloud computing, and data analytics to deliver innovative \nsolutions. As part of our commitment to innovation, we are currently developing multiple \ntechnology-driven projects aimed at transforming industries and enhancing user experiences. This \ndocument provides an overview of our key projects, their objectives, technological foundations, and\nanticipated impact.\nProject 1: AI-Powered Customer Support Platform\nOverview\nThe AI-Powered Customer Support Platform aims to revolutionize the way businesses handle \ncustomer queries by implementing advanced natural language processing (NLP) and machine \nlearning (ML) techniques.\nKey Features\n\u2022Automated Query Resolution:  Uses large language models (LLMs) to understand and \nrespond to customer inquiries in real-time.\n\u2022Sentiment Analysis:  Detects user emotions and adapts responses accordingly.\n\u2022Seamless Human Handoff:  Transfers complex queries to human agents while retaining \ncontext.\n\u2022Multilingual Support:  Covers over 50 languages for global reach.\nTechnical Stack\n\u2022NLP Frameworks:  OpenAI\u2019s GPT-4, Hugging Face Transformers\n\u2022Cloud Infrastructure:  AWS Lambda, Kubernetes\n\u2022Data Storage: MongoDB, PostgreSQL\n\u2022API Integrations:  Slack, Zendesk, Salesforce\nExpected Impact\n\u2022Reduction in Support Costs:  Up to 40% decrease in customer support expenses.\n\u2022Improved Response Time:  85% of queries resolved in under 5 seconds.\n\u2022Enhanced Customer Satisfaction:  Projected NPS score increase of 30%."
+      },
+      {
+        "metadata": {
+          "producer": "LibreOffice 7.3",
+          "creator": "Writer",
+          "creationdate": "2025-03-29T15:25:19+00:00",
+          "source": "/Projects/GitHub/duncangoudie/timescale-rag/data/raw/example_project_document.pdf",
+          "total_pages": 4,
+          "page": 1,
+          "page_label": "2"
+        },
+        "page_content": "Project 2: Predictive Maintenance for Industrial Equipment\nOverview\nPredictive Maintenance is a cloud-based analytics solution that helps manufacturing and logistics \ncompanies reduce downtime by predicting equipment failures before they occur.\nKey Features\n\u2022IoT Sensor Integration:  Collects real-time data from industrial machines.\n\u2022Machine Learning Algorithms:  Detects patterns and anomalies to predict failures.\n\u2022Automated Alerts:  Notifies maintenance teams before issues escalate.\n\u2022Customizable Dashboards:  Provides real-time insights into equipment performance.\nTechnical Stack\n\u2022IoT Frameworks:  AWS IoT Core, Google Cloud IoT\n\u2022ML Models: TensorFlow, PyTorch\n\u2022Data Processing: Apache Kafka, Spark\n\u2022Visualization: Power BI, Grafana\nExpected Impact\n\u2022Reduced Downtime:  Up to 50% decrease in unexpected equipment failures.\n\u2022Cost Savings: Estimated 20% reduction in maintenance costs.\n\u2022Extended Equipment Life:  Machines operate 30% longer before needing major repairs.\nProject 3: Blockchain-Based Supply Chain Management\nOverview\nThis project is designed to enhance transparency, security, and efficiency in supply chain operations\nby utilizing blockchain technology.\nKey Features\n\u2022Immutable Records:  Tracks every transaction securely.\n\u2022Smart Contracts: Automates agreements and payments.\n\u2022Real-Time Tracking:  Provides end-to-end visibility of shipments.\n\u2022Fraud Prevention:  Reduces risks associated with counterfeit goods.\nTechnical Stack\n\u2022Blockchain Protocols:  Ethereum, Hyperledger Fabric\n\u2022Smart Contracts: Solidity, Chaincode"
+      },
+      {
+        "metadata": {
+          "producer": "LibreOffice 7.3",
+          "creator": "Writer",
+          "creationdate": "2025-03-29T15:25:19+00:00",
+          "source": "/Projects/GitHub/duncangoudie/timescale-rag/data/raw/example_project_document.pdf",
+          "total_pages": 4,
+          "page": 2,
+          "page_label": "3"
+        },
+        "page_content": "\u2022Data Management:  IPFS, BigQuery\n\u2022Integration: SAP, Oracle ERP\nExpected Impact\n\u2022Supply Chain Efficiency:  Reduces processing times by 35%.\n\u2022Cost Reduction: Saves businesses an estimated $5 million annually in fraud prevention.\n\u2022Compliance Enhancement:  Ensures adherence to regulatory standards.\nProject 4: AI-Driven Personalized E-Commerce \nRecommendations\nOverview\nThis AI-powered recommendation engine enhances the online shopping experience by providing \npersonalized product suggestions.\nKey Features\n\u2022Behavioral Analysis:  Tracks user interactions for better predictions.\n\u2022Deep Learning Models:  Enhances accuracy with neural networks.\n\u2022Real-Time Updates:  Adjusts recommendations based on real-time data.\n\u2022Cross-Selling Optimization:  Suggests complementary products.\nTechnical Stack\n\u2022AI Frameworks: TensorFlow, PyTorch\n\u2022Big Data Technologies:  Apache Hadoop, Snowflake\n\u2022Web Technologies:  React, Node.js\n\u2022Integration: Shopify, Magento, WooCommerce\nExpected Impact\n\u2022Increase in Sales: Projected 20% boost in average order value.\n\u2022Higher Engagement:  45% increase in user interaction.\n\u2022Customer Retention:  Repeat purchase rates improved by 30%.\nProject 5: Edge Computing for Smart Cities\nOverview\nThis initiative focuses on deploying edge computing infrastructure to support smart city \napplications such as traffic management and environmental monitoring."
+      },
+      {
+        "metadata": {
+          "producer": "LibreOffice 7.3",
+          "creator": "Writer",
+          "creationdate": "2025-03-29T15:25:19+00:00",
+          "source": "/Projects/GitHub/duncangoudie/timescale-rag/data/raw/example_project_document.pdf",
+          "total_pages": 4,
+          "page": 3,
+          "page_label": "4"
+        },
+        "page_content": "Key Features\n\u2022Low-Latency Data Processing:  Reduces reliance on central cloud processing.\n\u2022IoT Sensor Networks:  Connects thousands of devices.\n\u2022AI-Powered Insights:  Improves decision-making.\n\u2022Scalability: Supports growing urban infrastructures.\nTechnical Stack\n\u2022Edge Computing Platforms:  NVIDIA Jetson, AWS Greengrass\n\u2022Networking: 5G, LoRaWAN\n\u2022AI/ML Models: Scikit-Learn, OpenCV\n\u2022Data Storage: InfluxDB, Cassandra\nExpected Impact\n\u2022Traffic Efficiency:  Reduces congestion by 25%.\n\u2022Energy Savings: Lowers power consumption by 15%.\n\u2022Public Safety Improvement:  Enhances emergency response times.\nConclusion\n[Startup Name] remains committed to driving technological advancements across industries. Our \nprojects in AI, blockchain, IoT, and cloud computing are poised to bring substantial benefits, \nimproving efficiency, reducing costs, and enhancing user experiences. As we continue our journey, \nwe look forward to scaling these innovations and expanding our impact globally."
+      }
+    ],
+    "project_extractions": {
+      "0": [
+        " **Project 1: AI-Powered Customer Support Platform**",
+        " **Overview**: Aims to revolutionize customer query handling using advanced natural language processing (NLP) and machine learning (ML) techniques.",
+        " **Key Features**:",
+        " Automated Query Resolution: Utilizes large language models (LLMs) for real-time customer inquiry responses.",
+        " Sentiment Analysis: Detects user emotions to adapt responses.",
+        " Seamless Human Handoff: Transfers complex queries to human agents while retaining context.",
+        " Multilingual Support: Supports over 50 languages for global reach.",
+        " **Technical Stack**:",
+        " NLP Frameworks: OpenAI\u2019s GPT-4, Hugging Face Transformers.",
+        " Cloud Infrastructure: AWS Lambda, Kubernetes.",
+        " Data Storage: MongoDB, PostgreSQL.",
+        " API Integrations: Slack, Zendesk, Salesforce.",
+        " **Expected Impact**:",
+        " Reduction in Support Costs: Up to 40% decrease in customer support expenses.",
+        " Improved Response Time: 85% of queries resolved in under 5 seconds.",
+        " Enhanced Customer Satisfaction: Projected NPS score increase of 30%."
+      ],
+      "1": [
+        " **Project 2: Predictive Maintenance for Industrial Equipment**",
+        " **Overview**: A cloud-based analytics solution aimed at helping manufacturing and logistics companies reduce downtime by predicting equipment failures before they occur.",
+        " **Key Features**:",
+        " IoT Sensor Integration: Collects real-time data from industrial machines.",
+        " Machine Learning Algorithms: Detects patterns and anomalies to predict failures.",
+        " Automated Alerts: Notifies maintenance teams before issues escalate.",
+        " Customizable Dashboards: Provides real-time insights into equipment performance.",
+        " **Technical Stack**:",
+        " IoT Frameworks: AWS IoT Core, Google Cloud IoT",
+        " ML Models: TensorFlow, PyTorch",
+        " Data Processing: Apache Kafka, Spark",
+        " Visualization: Power BI, Grafana",
+        " **Expected Impact**:",
+        " Reduced Downtime: Up to 50% decrease in unexpected equipment failures.",
+        " Cost Savings: Estimated 20% reduction in maintenance costs.",
+        " Extended Equipment Life: Machines operate 30% longer before needing major repairs.",
+        " **Project 3: Blockchain-Based Supply Chain Management**",
+        " **Overview**: Designed to enhance transparency, security, and efficiency in supply chain operations by utilizing blockchain technology.",
+        " **Key Features**:",
+        " Immutable Records: Tracks every transaction securely.",
+        " Smart Contracts: Automates agreements and payments.",
+        " Real-Time Tracking: Provides end-to-end visibility of shipments.",
+        " Fraud Prevention: Reduces risks associated with counterfeit goods.",
+        " **Technical Stack**:",
+        " Blockchain Protocols: Ethereum, Hyperledger Fabric",
+        " Smart Contracts: Solidity, Chaincode"
+      ],
+      "2": [
+        " **Project 4: AI-Driven Personalized E-Commerce Recommendations**",
+        " Overview: This AI-powered recommendation engine enhances the online shopping experience by providing personalized product suggestions.",
+        " Key Features:",
+        " Behavioral Analysis: Tracks user interactions for better predictions.",
+        " Deep Learning Models: Enhances accuracy with neural networks.",
+        " Real-Time Updates: Adjusts recommendations based on real-time data.",
+        " Cross-Selling Optimization: Suggests complementary products.",
+        " Technical Stack:",
+        " AI Frameworks: TensorFlow, PyTorch",
+        " Big Data Technologies: Apache Hadoop, Snowflake",
+        " Web Technologies: React, Node.js",
+        " Integration: Shopify, Magento, WooCommerce",
+        " Expected Impact:",
+        " Increase in Sales: Projected 20% boost in average order value.",
+        " Higher Engagement: 45% increase in user interaction.",
+        " Customer Retention: Repeat purchase rates improved by 30%.",
+        " **Project 5: Edge Computing for Smart Cities**",
+        " Overview: This initiative focuses on deploying edge computing infrastructure to support smart city applications such as traffic management and environmental monitoring."
+      ],
+      "3": [
+        " Projects in AI: Focused on leveraging artificial intelligence to improve efficiency and decision-making across various industries.",
+        " Projects in blockchain: Aimed at integrating blockchain technology to enhance security and transparency in operations.",
+        " Projects in IoT: Concentrating on the development and implementation of Internet of Things solutions to connect devices and gather data for better insights.",
+        " Projects in cloud computing: Designed to optimize cloud services and infrastructure, enhancing scalability and performance for users."
+      ]
+    },
+    "quantitative_extractions": {
+      "0": {
+        "reduction_in_support_costs": [
+          "40%"
+        ],
+        "improved_response_time": [
+          "85% (under 5 seconds)"
+        ],
+        "enhanced_customer_satisfaction": [
+          "30%"
+        ]
+      },
+      "1": {
+        "reduced_downtime": [
+          "50% (not specified)"
+        ],
+        "cost_savings": [
+          "20% (not specified)"
+        ],
+        "extended_equipment_life": [
+          "30% (not specified)"
+        ]
+      },
+      "2": {
+        "supply_chain_efficiency": [
+          "35%"
+        ],
+        "cost_reduction": [
+          "$5 million (annually)"
+        ],
+        "increase_in_sales": [
+          "20%"
+        ],
+        "higher_engagement": [
+          "45%"
+        ],
+        "customer_retention": [
+          "30%"
+        ]
+      },
+      "3": {
+        "traffic_efficiency": [
+          "25%"
+        ],
+        "energy_savings": [
+          "15%"
+        ]
+      }
+    },
+    "token_count_log": {
+      "document_title": {
+        "output_tokens": 12,
+        "input_tokens": 430,
+        "total_tokens": 442
+      },
+      "extract_information_from_chunks": {
+        "output_tokens": 1036,
+        "input_tokens": 3116,
+        "total_tokens": 4152
+      }
+    }
+  }
+}
