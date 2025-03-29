@@ -42,4 +42,11 @@ python3 upload_json_extractions_to_timescale.py -i /path/tp/repo/data/extraction
 
 ### Run the LLM-Agent Chatbot
 
-TODO: finish copying this over!
+Run the chatbot with,
+```shell
+export TIMESCALE_SERVICE_URL='postgres://...'
+export TIMESCALE_COLLECTION_NAME='rag_demo'
+export OPENAI_API_KEY=""
+cd scripts
+python3 prototype_agent_chatbot_timescale.py
+```

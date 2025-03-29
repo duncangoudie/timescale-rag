@@ -21,20 +21,13 @@ table)
 
 """
 
-import boto3
-import json
 
-import argparse
-import operator
-from typing import Annotated
 from typing_extensions import TypedDict
 from typing import List
-from typing import Literal
 import os
 import ast
 
-from datetime import datetime
-from dateutil.relativedelta import relativedelta
+
 
 from langchain_core.tools import tool
 from langchain_core.messages import ToolMessage
@@ -62,7 +55,7 @@ def set_globals():
     openai_embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
     TIMESCALE_SERVICE_URL = os.environ["TIMESCALE_SERVICE_URL"]
-    TIMESCALE_COLLECTION = os.environ["TIMESCALE_COLLECTION"] # name world_stocks
+    TIMESCALE_COLLECTION = os.environ["TIMESCALE_COLLECTION_NAME"] # name world_stocks
     timescale_vectorstore = TimescaleVector(
         embedding=openai_embeddings,
         collection_name=TIMESCALE_COLLECTION,
@@ -94,8 +87,7 @@ def query_quantitative_database(prompt: str) -> (dict, dict):
                        }
     )
 
-    # The correct data point might be hidden within a very tight cluster (or there might be two data points we want, such
-    # as the same financial metric in multiple different years or quarters.
+    # The correct data point might be hidden within a very tight cluster (or there might be two data points we want)
     retriever_similar = vectorstore.as_retriever(
         search_kwargs={"filter": filter_split,
                        "k": 12,  # return docs,
@@ -138,8 +130,7 @@ def query_project_database(prompt: str) -> (dict, dict):
                        }
     )
 
-    # The correct data point might be hidden within a very tight cluster (or there might be two data points we want, such
-    # as the same financial metric in multiple different years or quarters.
+    # The correct data point might be hidden within a very tight cluster (or there might be two data points we want)
     retriever_similar = vectorstore.as_retriever(
         search_kwargs={"filter": filter_split,
                        "k": 12,  # return docs,
@@ -185,13 +176,15 @@ class QueryAgent:
         self.graph = StateGraph(self.OverallState)
 
         self.graph.add_node("human_input_make_query", self._human_input_make_query)
-        # TODO: finish copying this over!
+        self.graph.add_node("first_pass_tool_call", self._first_pass_tool_calling_llm)
+        self.graph.add_node("construct_output_response_to_user", self._construct_output_response_to_user)
 
 
         # Add graph edges
-
         self.graph.add_edge(START, "human_input_make_query")
-        # TODO: finish copying this over!
+        self.graph.add_edge("human_input_make_query", "first_pass_tool_call")
+        self.graph.add_edge("first_pass_tool_call", "construct_output_response_to_user")
+        self.graph.add_edge("construct_output_response_to_user", END)
 
 
 
@@ -237,8 +230,6 @@ class QueryAgent:
         state['input_query'] = user_input_query
 
         return state
-
-
 
 
     def _first_pass_tool_calling_llm(self, state: OverallState):
@@ -336,7 +327,6 @@ class QueryAgent:
 
         tool_response_combined_data = {k: (f"{tool_response_content[k]} "
                                            f"{tool_response_metadata[k]['original_filename']})"
-                                           f"(raw chunk: {tool_response_metadata[k]['raw_chunk_content']})"
                                            )
                                        for k in tool_response_content}
         #print(f"DEBUG {tool_response_combined_data=}")

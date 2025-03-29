@@ -125,7 +125,7 @@ class PreprocessingPipeline:
         else:
             document_metadata = None
         prompt_template = (
-            f"The following is from a financial document from company investor relations. \n"
+            f"The following is from a document regarding projects. \n"
             f"Please extract the title of this document. "
             f"Usually the first few words or lines contain the document title. \n"
             f"DOCUMENT CONTENTS: {early_select_doc_chunks} \n"  # This is assuming chunk size of 500
