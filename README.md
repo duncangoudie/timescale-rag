@@ -55,4 +55,4 @@ python3 prototype_agent_chatbot_timescale.py
 
 I've licensed this codebase under the GNU General Public License v3.0.
 
-If you would like to use it this code under a different license, please reach out to me :)
+If you would like to use this code under a different license, please reach out to me :)
