@@ -30,7 +30,6 @@ class TimescaleJsonUploader():
 
     def __init__(self):
 
-
         self.SERVICE_URL = os.environ["TIMESCALE_SERVICE_URL"]
         self.COLLECTION_NAME = os.environ["TIMESCALE_COLLECTION_NAME"] # TODO: make this an environment variable
 
