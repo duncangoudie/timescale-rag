@@ -51,6 +51,30 @@ cd scripts
 python3 prototype_agent_chatbot_timescale.py
 ```
 
+Example question and answer response from our LLM-agent chatbot,
+```
+What is your question? How efficient is our block chain technology?
+Answer:
+To evaluate the efficiency of your blockchain technology, we can analyze several metrics retrieved from various data sources. Here are the key performance indicators:
+
+1. **Supply Chain Efficiency**: 35% improvement noted.
+2. **Traffic Efficiency**: 25% improvement reported.
+3. **Cost Reduction**: Annual savings amounting to $5 million.
+4. **Energy Savings**: A 15% reduction in energy consumption.
+5. **Reduced Downtime**: A significant decrease of 50%.
+6. **Cost Savings**: Noted to be around 20%, specifics not provided.
+7. **Improved Response Time**: 85% of responses are completed in under 5 seconds.
+8. **Reduction in Support Costs**: 40% decrease observed.
+9. **Higher Engagement**: Customer engagement improved by 45%.
+10. **Enhanced Customer Satisfaction**: Increased by 30%.
+11. **Extended Equipment Life**: An improvement of 30%, specifics not provided.
+12. **Customer Retention**: Increased by 30%.
+
+Overall, these metrics suggest that your blockchain technology is demonstrating significant efficiencies in various areas such as cost savings, response times, and customer engagement.
+This result costed the following tokens: {'first_pass_tool_calling_llm': {'output_tokens': 21, 'input_tokens': 123, 'total_tokens': 144}, 'construct_output_response_to_user': {'output_tokens': 244, 'input_tokens': 353, 'total_tokens': 597}}
+
+```
+
 ## License
 
 I've licensed this codebase under the GNU General Public License v3.0.
