@@ -1,7 +1,16 @@
 # timescale-rag
 An example RAG and LLM-agent chatbot implementation using Timescale's vector database.
 
-TODO: draw out the system
+My system consists of 3 stages:
+1. Document Preprocessing
+2. Vector Database Ingestion
+3. LLM-agent Chatbot
+
+The document preprocessing stage is used to extract key pieces of information from the document.
+
+At vector database ingestion, we set the key extractions as vector indexes. This performs better than textbook document chunking since multiple concepts could be contained within a chunk and lead to a neutralised embedding vector. This stage also manages the metadata associated with each vector.
+
+The chatbot uses a ReAct LLM-agent architecture. The tools bound to the LLM are used to query the vector database according to LLM determined criteria from the user prompt; metadata associated with the vector is used for filtering retrieved datapoints. Taking the retrievals from the vector database into account, a final response is handed back to the user.
 
 ## Instructions
 
