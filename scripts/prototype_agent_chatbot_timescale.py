@@ -159,7 +159,6 @@ class QueryAgent:
         self.llm = ChatOpenAI(model="gpt-4o-mini")
 
         # Bind tools
-        ## TODO: bind the tools
         ## Rule of thumb, do not use more than 6 tools for any given agent
         tools = [
             query_quantitative_database,
