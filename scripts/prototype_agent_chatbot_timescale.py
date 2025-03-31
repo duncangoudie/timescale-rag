@@ -102,11 +102,7 @@ def query_quantitative_database(prompt: str) -> (dict, dict):
     all_retrievals = diverse_retrievals + similar_retrievals
     page_content_dict = {i: (f"{d.page_content}: {d.metadata['quant_value']}")
                          for i, d in enumerate(all_retrievals) if 'quant_value' in d.metadata}
-    #page_content_dict = {i: (f"{d.page_content}: {d.metadata['quant_value']} "
-    #                         f"({d.metadata['document_name']}, {d.metadata['document_type']}, {d.metadata['document_date']})")
-    #                     for i, d in enumerate(all_retrievals)
-    #                     if 'quant_value' in d.metadata and 'document_name' in d.metadata and 'document_type' in d.metadata
-    #                     and 'document_date' in d.metadata}
+    
     metadata_dict = {i: d.metadata for i, d in enumerate(all_retrievals)}
 
     return page_content_dict, metadata_dict
